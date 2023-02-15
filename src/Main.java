@@ -1,5 +1,10 @@
+import uaslp.objetos.list.linkedlist.LinkedList;
+import uaslp.objetos.list.linkedlist.LinkedListIterator;
+
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+       LinkedList lista = new LinkedList();
+       lista.addAtTail("Algo");
     }
 }
