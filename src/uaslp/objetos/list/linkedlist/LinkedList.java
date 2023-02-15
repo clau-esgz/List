@@ -15,13 +15,12 @@ public class LinkedList {
         node.data = data;
         if (size == 0){ // si no hay datos
         head = node;
-        tail = node;
         }
         else { // ya existen datos entonces tenemos que enlazar nodos
          node.previous = tail;// el nodo nuevo en su "campo" anterior(por decirlo asi) ahora apunta donde apunta tail
-         tail = node.next;// ahora el campo siguiente del nodo existente (que era tail )ahora apunta al nuevo nodo
-         tail = node;// tail apunta al nodo nuevo
+         tail.next = node;// ahora el campo siguiente del nodo existente (que era tail )ahora apunta al nuevo nodo
         }
+        tail = node;// tail apunta al nodo nuevo
       size ++;
     }
 
@@ -40,7 +39,7 @@ public class LinkedList {
         size ++;
     }
 
-    public void remove(int index){
+   public void remove(int index){
         if (index < 0 || index >= size) { //valores fuera de rango
             return;
         }
@@ -64,11 +63,12 @@ public class LinkedList {
             //previous.setNext(iteratorNode.getNext());
 
             iteratorNode.previous.next = iteratorNode.next;//->
-            iteratorNode.next.previous = iteratorNode.previous;//<-
-
+            iteratorNode.next.previous= iteratorNode.previous;//<-
 
         }
     }
+
+
 
     private Node findNode(int indexToRemove){ //devuelveTodoElNodo
         if (indexToRemove < 0 || indexToRemove >= size){ //valores imposibles
@@ -141,5 +141,7 @@ public class LinkedList {
     public LinkedListIterator getIterator(){ //
       return new LinkedListIterator(head);// retorna un objeto de tipo linkedlistiterator sin asignar a una variable
     }
+
+
 }
 
