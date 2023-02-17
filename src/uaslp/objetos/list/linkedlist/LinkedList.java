@@ -1,5 +1,7 @@
 package uaslp.objetos.list.linkedlist;
 
+import uaslp.objetos.list.arraylist.ArrayList;
+
 public class LinkedList {
     private Node head;
     private Node tail;
@@ -141,6 +143,8 @@ public class LinkedList {
     public LinkedListIterator getIterator(){ //
       return new LinkedListIterator(head);// retorna un objeto de tipo linkedlistiterator sin asignar a una variable
     }
+
+
 
 
 }

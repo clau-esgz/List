@@ -1,89 +1,95 @@
-import uaslp.objetos.list.linkedlist.LinkedList;
-import uaslp.objetos.list.linkedlist.LinkedListIterator;
+import uaslp.objetos.list.arraylist.ArrayList;
+import uaslp.objetos.list.arraylist.ArrayListIterator;
 
 
 public class Main {
     public static void main(String[] args) {
-        LinkedList lista = new LinkedList();
+        String info;
+        ArrayList arrayList = new ArrayList();
+        ArrayListIterator iterator;
+        iterator = arrayList.getIterator();
 
-       lista.addAtTail("medio");
+       arrayList.addAtTail("C");
+       // impirmira C null
+        System.out.println("inicio de impresion de arreglo");
+       while(iterator.hasNext()){
+           String array = iterator.next();
+           System.out.println(" " + array);
+       }
+        System.out.println("final de impresion de arreglo");
 
-        LinkedListIterator iterator;
-        iterator = lista.getIterator();
-
-        while(iterator.hasNext ()) {
-            String data = iterator.next();
-            System.out.print(" " + data);
+        arrayList.addAtTail("D");
+       //imprimira C D
+        iterator = arrayList.getIterator();
+        System.out.println("inicio de impresion de arreglo");
+        while(iterator.hasNext()){
+            String array = iterator.next();
+            System.out.println(" " + array);
         }
-        System.out.println("");
+        System.out.println("final de impresion de arreglo");
 
-        lista.setAt(0,"aquel");
-
-        iterator = lista.getIterator();
-
-        while(iterator.hasNext ()) {
-            String data = iterator.next();
-            System.out.print(" " + data);
+        arrayList.addAtFront("B");
+       // Imprimira B C D
+        iterator = arrayList.getIterator();
+        System.out.println("inicio de impresion de arreglo");
+        while(iterator.hasNext()){
+            String array = iterator.next();
+            System.out.println(" " + array);
         }
-        System.out.println("");
-        
-       lista.addAtTail("final"); //adAtTailNoSirve
-        iterator = lista.getIterator();
+        System.out.println("final de impresion de arreglo");
 
-        while(iterator.hasNext ()) {
-            String data = iterator.next();
-            System.out.print(" " + data);
+        arrayList.addAtFront("A");
+        //Imprimira  A B C D
+        iterator = arrayList.getIterator();
+        System.out.println("inicio de impresion de arreglo");
+        while(iterator.hasNext()){
+            String array = iterator.next();
+            System.out.println(" " + array);
         }
-        System.out.println("");
+        System.out.println("final de impresion de arreglo");
 
-       lista.addAtFront("Inicio");// inicio aquel final
 
-        iterator = lista.getIterator();
-
-        while(iterator.hasNext ()) {
-            String data = iterator.next();
-            System.out.print(" " + data);
+        arrayList.remove(3);
+       // Imprimira A B C
+        iterator = arrayList.getIterator();
+        System.out.println("inicio de impresion de arreglo");
+        while(iterator.hasNext()){
+            String array = iterator.next();
+            System.out.println(" " + array);
         }
-        System.out.println("");
+        System.out.println("final de impresion de arreglo");
 
-        lista.addAtFront("este"); // este inicio aquel final
-
-        iterator = lista.getIterator();
-
-        while(iterator.hasNext ()) {
-            String data = iterator.next();
-            System.out.print(" " + data);
+        arrayList.removeAllWithValues("C");
+        // imprimira A B
+        iterator = arrayList.getIterator();
+        System.out.println("inicio de impresion de arreglo");
+        while(iterator.hasNext()){
+            String array = iterator.next();
+            System.out.println(" " + array);
         }
-        System.out.println();
+        System.out.println("final de impresion de arreglo");
 
-       lista.removeAllWithValues("este");// inicio aquel final
 
-        iterator = lista.getIterator();
-
-        while(iterator.hasNext ()) {
-            String data = iterator.next();
-            System.out.print(" " + data);
-            
+        arrayList.setAt(0,"Z");
+         // Imprimira Z B
+        iterator = arrayList.getIterator();
+        System.out.println("inicio de impresion de arreglo");
+        while(iterator.hasNext()){
+            String array = iterator.next();
+            System.out.println(" " + array);
         }
-        System.out.println();
+        System.out.println("final de impresion de arreglo");
 
+        info = arrayList.getAt(0);
 
-       lista.remove(1); // inicio final
-        iterator = lista.getIterator();
-        while(iterator.hasNext ()) {
-            String data = iterator.next();
-            System.out.print(" " + data);
-        }
+        System.out.println(" info del index pedido " + info);
+        arrayList.removeAll();
 
+        iterator = arrayList.getIterator();
 
-
-       lista.removeAll();
-
-        iterator = lista.getIterator();
-
-        while(iterator.hasNext ()) {
-            String data = iterator.next();
-            System.out.println(data);
+        while(iterator.hasNext()){
+            String array = iterator.next();
+            System.out.println(" " + array);
         }
 
 

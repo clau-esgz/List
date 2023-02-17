@@ -18,6 +18,4 @@ public class LinkedListIterator {
            return true;
        }
     }
-
-
 }
