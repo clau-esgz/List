@@ -2,7 +2,7 @@ package uaslp.objetos.list.arraylist;
 
 import uaslp.objetos.list.linkedlist.LinkedListIterator;
 
-//nota size es cuanto llevo y array.length es cuanto espacio tengo en total
+//nota inserted es cuanto llevo y array.length es cuanto espacio tengo en total
 public class ArrayList {
     public static final int INITIAL_SIZE = 2;
 

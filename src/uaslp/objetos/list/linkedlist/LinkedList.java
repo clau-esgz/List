@@ -42,7 +42,7 @@ public class LinkedList {
     }
 
    public void remove(int index){
-        if (index < 0 || index >= size) { //valores fuera de rango
+        if (index < 0 || index > size) { //valores fuera de rango
             return;
         }
         if (size == 1){ // significa que es el unico dato
@@ -73,7 +73,7 @@ public class LinkedList {
 
 
     private Node findNode(int indexToRemove){ //devuelveTodoElNodo
-        if (indexToRemove < 0 || indexToRemove >= size){ //valores imposibles
+        if (indexToRemove < 0 || indexToRemove > size){ //valores imposibles
             return null;
         }
         Node iteratorNode = head; //se crea una variable "iteratorNode" para avanzar, este empieza en la cabeza
@@ -103,7 +103,7 @@ public class LinkedList {
     }
 
     public String getAt(int index){ //metodo que devuelve informacion de un nodo medido "obtener en"
-        if (index < 0 || index >= size){ //valores imposibles
+        if (index < 0 || index > size){ //valores imposibles
             return null;
         }
         Node currentNode = head; // declaracion de nodo actual
