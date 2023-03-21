@@ -1,8 +1,9 @@
 package uaslp.objetos.list.linkedlist;
 
-import uaslp.objetos.list.arraylist.ArrayList;
+import uaslp.objetos.list.Iterator;
+import uaslp.objetos.list.List;
 
-public class LinkedList {
+public class LinkedList implements List {
     private Node head;
     private Node tail;
     private int size;
@@ -116,7 +117,7 @@ public class LinkedList {
 
 
 
-    public void removeAllWithValues(String data){
+    public void removeAllWithValue(String data){
         Node iteratorNode = head;
         while(iteratorNode != null) {
             if (iteratorNode.data.equals(data)) {
@@ -140,7 +141,7 @@ public class LinkedList {
         }
     }
 
-    public LinkedListIterator getIterator(){ //
+    public Iterator getIterator(){ //
       return new LinkedListIterator(head);// retorna un objeto de tipo linkedlistiterator sin asignar a una variable
     }
 

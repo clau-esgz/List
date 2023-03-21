@@ -1,6 +1,8 @@
 package uaslp.objetos.list.arraylist;
 
-public class ArrayListIterator {
+import uaslp.objetos.list.Iterator;
+
+public class ArrayListIterator implements Iterator {
     private ArrayList arraylist;
     private int currentSpace = 0;
 

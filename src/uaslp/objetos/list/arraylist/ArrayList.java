@@ -1,9 +1,10 @@
 package uaslp.objetos.list.arraylist;
-
+import uaslp.objetos.list.Iterator;
+import uaslp.objetos.list.List;
 import uaslp.objetos.list.linkedlist.LinkedListIterator;
 
 //nota inserted es cuanto llevo y array.length es cuanto espacio tengo en total
-public class ArrayList {
+public class ArrayList implements List {
     public static final int INITIAL_SIZE = 2;
 
     private String[] array;
@@ -91,7 +92,7 @@ public class ArrayList {
         return info;
     }
 
-    public void removeAllWithValues(String data) {
+    public void removeAllWithValue(String data) {
         String[] newArray = new String[array.length];
         for (int i = 0; i <= inserted; i++) {
             if (array[i] != data) {
@@ -102,9 +103,10 @@ public class ArrayList {
         inserted--;
     }
 
-    public ArrayListIterator getIterator() { //
-        return new ArrayListIterator(this);// retorna un objeto de tipo linkedlistiterator sin asignar a una variable
 
+
+    public Iterator getIterator(){ //
+        return new ArrayListIterator(this);// retorna un objeto de tipo linkedlistiterator sin asignar a una variable
     }
 
 
