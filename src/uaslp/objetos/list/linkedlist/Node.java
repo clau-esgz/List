@@ -2,7 +2,7 @@ package uaslp.objetos.list.linkedlist;
 
 class Node {
 
-  String data;
+  Object data;
   Node next;
   Node previous;
 }

@@ -34,7 +34,7 @@ public class main {
         while (iteratorList.hasNext()) {
             System.out.println("  " + iteratorList.next());
         }
-        System.out.println("inicio de impresion de lista");
+        System.out.println("final de impresion de lista");
 
 
         System.out.println("inicio de impresion de Array: ");
@@ -42,7 +42,7 @@ public class main {
         while (iteratorArray.hasNext()) {
             System.out.println(iteratorArray.next());
         }
-        System.out.println("inicio de impresion de Array: ");
+        System.out.println("final de impresion de Array: ");
 
         array.removeAll();
         list.removeAll();

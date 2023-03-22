@@ -7,8 +7,8 @@ public class LinkedListIterator implements Iterator {
     LinkedListIterator(Node head){ // constructor
         currentNode = head;
     }
-    public String next(){ //regresa el valor actual y avanza al siguiente elemento
-        String value = currentNode.data;
+    public Object next(){ //regresa el valor actual y avanza al siguiente elemento
+        Object value = currentNode.data;
         currentNode = currentNode.next;
         return value;
     }

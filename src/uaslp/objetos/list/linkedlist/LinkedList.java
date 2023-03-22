@@ -13,7 +13,7 @@ public class LinkedList implements List {
         return size;
     }
 
-    public void  addAtTail(String data) {
+    public void  addAtTail(Object data) {
         Node node = new Node();
         node.data = data;
         if (size == 0){ // si no hay datos
@@ -27,7 +27,7 @@ public class LinkedList implements List {
       size ++;
     }
 
-    public void addAtFront(String data){
+    public void addAtFront(Object data){
         Node node = new Node();
         node.data = data;
         if (size == 0){ // si no hay datos
@@ -93,7 +93,7 @@ public class LinkedList implements List {
         size = 0;
     }
 
-    public void setAt(int index,String data){ //remplaza valores
+    public void setAt(int index,Object data){ //remplaza valores
         Node foundNode = findNode(index);
         if (index < 0 || index >= size) { //valores imposibles
             return;
@@ -103,7 +103,7 @@ public class LinkedList implements List {
         }
     }
 
-    public String getAt(int index){ //metodo que devuelve informacion de un nodo medido "obtener en"
+    public Object getAt(int index){ //metodo que devuelve informacion de un nodo medido "obtener en"
         if (index < 0 || index > size){ //valores imposibles
             return null;
         }
@@ -117,7 +117,7 @@ public class LinkedList implements List {
 
 
 
-    public void removeAllWithValue(String data){
+    public void removeAllWithValue(Object data){
         Node iteratorNode = head;
         while(iteratorNode != null) {
             if (iteratorNode.data.equals(data)) {

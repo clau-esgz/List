@@ -2,19 +2,19 @@ package uaslp.objetos.list;
 
 
 public interface List {
-    void addAtTail(String data);
+    void addAtTail(Object data);
 
-    void addAtFront(String data);
+    void addAtFront(Object data);
 
     void remove(int index);
 
     void removeAll();
 
-    void setAt(int index, String data);
+    void setAt(int index, Object data);
 
-    String getAt(int index);
+    Object getAt(int index);
 
-    void removeAllWithValue(String data);
+    void removeAllWithValue(Object data);
 
     int getSize();
 

@@ -7,14 +7,14 @@ import uaslp.objetos.list.linkedlist.LinkedListIterator;
 public class ArrayList implements List {
     public static final int INITIAL_SIZE = 2;
 
-    private String[] array;
+    private Object[] array;
     private int inserted; //cuantos datos se han insertado al arreglo
 
     public ArrayList() {
-        array = new String[INITIAL_SIZE];
+        array = new Object[INITIAL_SIZE];
     }
 
-    public void addAtTail(String data) {
+    public void addAtTail(Object data) {
         if (inserted == array.length) {
             increaseSize();
         }
@@ -23,7 +23,7 @@ public class ArrayList implements List {
     }
 
     private void increaseSize() {
-        String[] newArray = new String[array.length * 2];
+        Object[] newArray = new Object[array.length * 2];
         for (int i = 0; i < array.length; i++) {
             newArray[i] = array[i];
         }
@@ -46,7 +46,7 @@ public class ArrayList implements List {
         }
     }
 
-    public void addAtFront(String data) {
+    public void addAtFront(Object data) {
         if (inserted == array.length) {
             increaseSize();
         }
@@ -69,7 +69,7 @@ public class ArrayList implements List {
         inserted--;
     }
 
-    public void setAt(int index, String data) { //remplazar el dato
+    public void setAt(int index,Object data) { //remplazar el dato
         for (int i = 0; i <= inserted; i++) {
             if (i == index) {
                 array[i] = data;
@@ -78,9 +78,9 @@ public class ArrayList implements List {
     }
 
 
-    public String getAt(int index) { //retorna info de un index pedido
+    public Object getAt(int index) { //retorna info de un index pedido
 
-        String info = "";
+        Object info = "";
         if (index < 0 || index >= inserted) { //valores no validos
             return null;
         }
@@ -92,8 +92,8 @@ public class ArrayList implements List {
         return info;
     }
 
-    public void removeAllWithValue(String data) {
-        String[] newArray = new String[array.length];
+    public void removeAllWithValue(Object data) {
+        Object[] newArray = new String[array.length];
         for (int i = 0; i <= inserted; i++) {
             if (array[i] != data) {
                 newArray[i] = array[i];

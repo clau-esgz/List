@@ -10,8 +10,8 @@ public class ArrayListIterator implements Iterator {
         this.arraylist = arrayList;
     }
 
-    public String next(){ //regresa el valor actual y avanza al siguiente elemento
-        String data = arraylist.getAt(currentSpace);
+    public Object next(){ //regresa el valor actual y avanza al siguiente elemento
+        Object data = arraylist.getAt(currentSpace);
         currentSpace ++;
         return data;
 

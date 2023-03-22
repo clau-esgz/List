@@ -1,6 +1,6 @@
 package uaslp.objetos.list;
 
 public interface Iterator {
-    String next();
+    Object next();
     boolean hasNext();
 }
