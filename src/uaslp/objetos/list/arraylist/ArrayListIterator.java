@@ -2,7 +2,7 @@ package uaslp.objetos.list.arraylist;
 
 import uaslp.objetos.list.Iterator;
 
-public class ArrayListIterator implements Iterator {
+public class ArrayListIterator <T> implements Iterator <T> {
     private ArrayList arraylist;
     private int currentSpace = 0;
 
@@ -10,8 +10,8 @@ public class ArrayListIterator implements Iterator {
         this.arraylist = arrayList;
     }
 
-    public Object next(){ //regresa el valor actual y avanza al siguiente elemento
-        Object data = arraylist.getAt(currentSpace);
+    public T next(){ //regress el valor actual y avanza al siguiente elemento
+        T data = (T) arraylist.getAt(currentSpace);
         currentSpace ++;
         return data;
 

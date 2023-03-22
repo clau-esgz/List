@@ -7,7 +7,7 @@ import uaslp.objetos.list.Iterator;
 public class main {
     public static void main(String[] args) {
 
-        List list = new LinkedList();
+        List<String> list = new LinkedList();
         list.addAtTail("B"); //B
         list.addAtFront("A"); //AB
         list.addAtFront("X"); //XAB
@@ -17,7 +17,7 @@ public class main {
         list.removeAllWithValue("B"); // A
         list.getSize();//1
 
-        List array = new ArrayList();
+        List<String> array = new ArrayList();
         array.addAtTail("Z"); //Z
         array.addAtFront("Y");//YZ
         array.addAtFront("W");//WYZ

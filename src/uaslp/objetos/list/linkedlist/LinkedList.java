@@ -3,9 +3,9 @@ package uaslp.objetos.list.linkedlist;
 import uaslp.objetos.list.Iterator;
 import uaslp.objetos.list.List;
 
-public class LinkedList implements List {
-    private Node head;
-    private Node tail;
+public class LinkedList<T> implements List <T> {
+    private Node<T> head;
+    private Node<T> tail;
     private int size;
 
 
@@ -13,8 +13,8 @@ public class LinkedList implements List {
         return size;
     }
 
-    public void  addAtTail(Object data) {
-        Node node = new Node();
+    public void  addAtTail(T data) {
+        Node<T> node = new Node<>();
         node.data = data;
         if (size == 0){ // si no hay datos
         head = node;
@@ -27,8 +27,8 @@ public class LinkedList implements List {
       size ++;
     }
 
-    public void addAtFront(Object data){
-        Node node = new Node();
+    public void addAtFront(T data){
+        Node<T> node = new Node<>();
         node.data = data;
         if (size == 0){ // si no hay datos
             head = node;
@@ -60,8 +60,7 @@ public class LinkedList implements List {
             tail.next = null;
         }
         else{ // que el dato a eliminar está en medio
-            Node iteratorNode = findNode(index); //se llama a este metodo para encontrar el nodo y nos dé el nodo con todoYSusAtributos
-
+            Node<T> iteratorNode = findNode(index); //se llama a este metodo para encontrar el nodo y nos dé el nodo con todoYSusAtributos
             //Node previous = iteratorNode.getPrevious(); estas dos lineas son equivalentes a iteratorNode.getPrevious().setNext(iteratorNode.getNext()); // ->
             //previous.setNext(iteratorNode.getNext());
 
@@ -73,11 +72,11 @@ public class LinkedList implements List {
 
 
 
-    private Node findNode(int indexToRemove){ //devuelveTodoElNodo
+    private Node<T> findNode(int indexToRemove){ //devuelveTodoElNodo
         if (indexToRemove < 0 || indexToRemove > size){ //valores imposibles
             return null;
         }
-        Node iteratorNode = head; //se crea una variable "iteratorNode" para avanzar, este empieza en la cabeza
+        Node<T> iteratorNode = head; //se crea una variable "iteratorNode" para avanzar, este empieza en la cabeza
         int i = 0;
         while(i != indexToRemove) {
             i++;
@@ -93,8 +92,8 @@ public class LinkedList implements List {
         size = 0;
     }
 
-    public void setAt(int index,Object data){ //remplaza valores
-        Node foundNode = findNode(index);
+    public void setAt(int index,T data){ //remplaza valores
+        Node<T> foundNode = findNode(index);
         if (index < 0 || index >= size) { //valores imposibles
             return;
         }
@@ -103,11 +102,11 @@ public class LinkedList implements List {
         }
     }
 
-    public Object getAt(int index){ //metodo que devuelve informacion de un nodo medido "obtener en"
+    public T getAt(int index){ //metodo que devuelve informacion de un nodo medido "obtener en"
         if (index < 0 || index > size){ //valores imposibles
             return null;
         }
-        Node currentNode = head; // declaracion de nodo actual
+        Node<T> currentNode = head; // declaracion de nodo actual
         for (int currentIndex = 0; currentIndex <index; currentIndex ++){ //
             currentNode = currentNode.next; //avanza el currentoNode
         }
