@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="368d9995-3788-4d06-945d-d6acd13067ec" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List_EspinosaClaudia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/List_EspinosaClaudia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/Iterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/Iterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/arraylist/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/arraylist/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/arraylist/ArrayListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/arraylist/ArrayListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/LinkedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/uaslp/objetos/list/linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,18 +37,34 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2LRBHzo83jo67obJOKzN64jLqad" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/death/Desktop/TOO_List"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\death\Desktop\TOO_List" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\death\Desktop\TOO_List\src\main\java" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,6 +76,9 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.puml" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -57,7 +87,7 @@
           <option name="timeStamp" value="8" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/uaslp/objetos/list/arraylist/ArrayList.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/uaslp/objetos/list/arraylist/ArrayList.java</url>
           <line>6</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
