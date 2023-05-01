@@ -2,6 +2,8 @@ package uaslp.objetos.list.linkedlist;
 
 import uaslp.objetos.list.Iterator;
 import uaslp.objetos.list.List;
+import uaslp.objetos.list.exceptions.BadIndexException;
+import uaslp.objetos.list.exceptions.NotNullAllowedException;
 
 public class LinkedList<T> implements List <T> {
     private Node<T> head;
@@ -13,7 +15,10 @@ public class LinkedList<T> implements List <T> {
         return size;
     }
 
-    public void  addAtTail(T data) {
+    public void  addAtTail(T data) throws NotNullAllowedException {
+        if (data == null){
+            throw new NotNullAllowedException();
+        }
         Node<T> node = new Node<>();
         node.data = data;
         if (size == 0){ // si no hay datos
@@ -27,7 +32,10 @@ public class LinkedList<T> implements List <T> {
       size ++;
     }
 
-    public void addAtFront(T data){
+    public void addAtFront(T data) throws NotNullAllowedException {
+        if (data == null){
+            throw new NotNullAllowedException();
+        }
         Node<T> node = new Node<>();
         node.data = data;
         if (size == 0){ // si no hay datos
@@ -42,9 +50,9 @@ public class LinkedList<T> implements List <T> {
         size ++;
     }
 
-   public void remove(int index){
-        if (index < 0 || index > size) { //valores fuera de rango
-            return;
+   public void remove(int index) throws BadIndexException {
+        if (index < 0 || index >= size) {
+            throw new BadIndexException();
         }
         if (size == 1){ // significa que es el unico dato
             head = null;
@@ -92,19 +100,22 @@ public class LinkedList<T> implements List <T> {
         size = 0;
     }
 
-    public void setAt(int index,T data){ //remplaza valores
+    public void setAt(int index,T data) throws BadIndexException,NotNullAllowedException{ //remplaza valores
         Node<T> foundNode = findNode(index);
         if (index < 0 || index >= size) { //valores imposibles
-            return;
+            throw new BadIndexException();
+        }
+        if (data == null){
+            throw new NotNullAllowedException();
         }
         if ( foundNode != null) {
             foundNode.data = data;
         }
     }
 
-    public T getAt(int index){ //metodo que devuelve informacion de un nodo medido "obtener en"
-        if (index < 0 || index > size){ //valores imposibles
-            return null;
+    public T getAt(int index) throws BadIndexException { //metodo que devuelve informacion de un nodo medido "obtener en"
+        if (index < 0 || index >= size){
+            throw new BadIndexException();
         }
         Node<T> currentNode = head; // declaracion de nodo actual
         for (int currentIndex = 0; currentIndex <index; currentIndex ++){ //

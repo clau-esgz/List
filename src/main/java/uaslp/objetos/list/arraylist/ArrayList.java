@@ -1,6 +1,8 @@
 package uaslp.objetos.list.arraylist;
 import uaslp.objetos.list.Iterator;
 import uaslp.objetos.list.List;
+import uaslp.objetos.list.exceptions.BadIndexException;
+import uaslp.objetos.list.exceptions.NotNullAllowedException;
 
 
 //nota inserted es cuanto llevo y array.length es cuanto espacio tengo en total
@@ -14,7 +16,10 @@ public class ArrayList <T> implements List<T> {
         array = (T[])new Object [INITIAL_SIZE];
     }
 
-    public void addAtTail(T data) {
+    public void addAtTail(T data) throws NotNullAllowedException {
+        if (data == null){
+            throw new NotNullAllowedException();
+        }
         if (inserted == array.length) {
             increaseSize();
         }
@@ -46,7 +51,10 @@ public class ArrayList <T> implements List<T> {
         }
     }
 
-    public void addAtFront(T data) {
+    public void addAtFront(T data)throws NotNullAllowedException {
+        if (data == null){
+            throw new NotNullAllowedException();
+        }
         if (inserted == array.length) {
             increaseSize();
         }
@@ -57,9 +65,10 @@ public class ArrayList <T> implements List<T> {
         inserted++; //incremento el valor de size, porque ya se insertó el dato
     }
 
-    public void remove(int index) {
+    public void remove(int index) throws BadIndexException
+    {
         if (index < 0 || index >= inserted) { //valores no validos
-            return;
+            throw new BadIndexException();
         }
         for (int i = index; i < inserted -1; i++)
         {
@@ -69,7 +78,13 @@ public class ArrayList <T> implements List<T> {
         inserted--;
     }
 
-    public void setAt(int index,T data) { //remplazar el dato
+    public void setAt(int index,T data) throws BadIndexException,NotNullAllowedException { //remplazar el dato
+        if (data == null){
+                throw new NotNullAllowedException();
+        }
+        if (index < 0 || index >= inserted) { //valores no validos
+            throw new BadIndexException();
+        }
         for (int i = 0; i <= inserted; i++) {
             if (i == index) {
                 array[i] = data;
@@ -78,11 +93,11 @@ public class ArrayList <T> implements List<T> {
     }
 
 
-    public T getAt(int index) { //retorna info de un index pedido
+    public T getAt(int index) throws BadIndexException { //retorna info de un index pedido
 
         T info = (T) "";
         if (index < 0 || index >= inserted) { //valores no validos
-            return null;
+            throw new BadIndexException();
         }
         for (int i = 0; i <= inserted; i++) {
             if (i == index) {
