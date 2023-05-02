@@ -16,9 +16,7 @@ public class LinkedList<T> implements List <T> {
     }
 
     public void  addAtTail(T data) throws NotNullAllowedException {
-        if (data == null){
-            throw new NotNullAllowedException();
-        }
+        validateNotNullValue(data);
         Node<T> node = new Node<>();
         node.data = data;
         if (size == 0){ // si no hay datos
@@ -33,9 +31,7 @@ public class LinkedList<T> implements List <T> {
     }
 
     public void addAtFront(T data) throws NotNullAllowedException {
-        if (data == null){
-            throw new NotNullAllowedException();
-        }
+        validateNotNullValue(data);
         Node<T> node = new Node<>();
         node.data = data;
         if (size == 0){ // si no hay datos
@@ -51,9 +47,7 @@ public class LinkedList<T> implements List <T> {
     }
 
    public void remove(int index) throws BadIndexException {
-        if (index < 0 || index >= size) {
-            throw new BadIndexException();
-        }
+       validateBadIndexException(index,size);
         if (size == 1){ // significa que es el unico dato
             head = null;
             tail = null;
@@ -102,21 +96,15 @@ public class LinkedList<T> implements List <T> {
 
     public void setAt(int index,T data) throws BadIndexException,NotNullAllowedException{ //remplaza valores
         Node<T> foundNode = findNode(index);
-        if (index < 0 || index >= size) { //valores imposibles
-            throw new BadIndexException();
-        }
-        if (data == null){
-            throw new NotNullAllowedException();
-        }
+        validateBadIndexException(index,size);
+        validateNotNullValue(data);
         if ( foundNode != null) {
             foundNode.data = data;
         }
     }
 
     public T getAt(int index) throws BadIndexException { //metodo que devuelve informacion de un nodo medido "obtener en"
-        if (index < 0 || index >= size){
-            throw new BadIndexException();
-        }
+        validateBadIndexException(index,size);
         Node<T> currentNode = head; // declaracion de nodo actual
         for (int currentIndex = 0; currentIndex <index; currentIndex ++){ //
             currentNode = currentNode.next; //avanza el currentoNode
@@ -155,7 +143,16 @@ public class LinkedList<T> implements List <T> {
       return new LinkedListIterator(head);// retorna un objeto de tipo linkedlistiterator sin asignar a una variable
     }
 
-
+    private void validateNotNullValue(T data) throws NotNullAllowedException{
+        if (data == null){
+            throw new NotNullAllowedException();
+        }
+    }
+    private void validateBadIndexException(int index,int tamanno)throws BadIndexException{
+        if (index < 0 || index >= tamanno){
+            throw new BadIndexException();
+        }
+    }
 
 
 }

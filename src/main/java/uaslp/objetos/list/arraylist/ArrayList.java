@@ -17,9 +17,7 @@ public class ArrayList <T> implements List<T> {
     }
 
     public void addAtTail(T data) throws NotNullAllowedException {
-        if (data == null){
-            throw new NotNullAllowedException();
-        }
+        validateNotNullValue(data);
         if (inserted == array.length) {
             increaseSize();
         }
@@ -52,9 +50,7 @@ public class ArrayList <T> implements List<T> {
     }
 
     public void addAtFront(T data)throws NotNullAllowedException {
-        if (data == null){
-            throw new NotNullAllowedException();
-        }
+        validateNotNullValue(data);
         if (inserted == array.length) {
             increaseSize();
         }
@@ -64,12 +60,9 @@ public class ArrayList <T> implements List<T> {
         array[0] = data; //al final queda un espacio libre
         inserted++; //incremento el valor de size, porque ya se insertó el dato
     }
-
     public void remove(int index) throws BadIndexException
     {
-        if (index < 0 || index >= inserted) { //valores no validos
-            throw new BadIndexException();
-        }
+        validateBadIndexException(index,inserted);
         for (int i = index; i < inserted -1; i++)
         {
             array[i] = array[i + 1];
@@ -79,12 +72,8 @@ public class ArrayList <T> implements List<T> {
     }
 
     public void setAt(int index,T data) throws BadIndexException,NotNullAllowedException { //remplazar el dato
-        if (data == null){
-                throw new NotNullAllowedException();
-        }
-        if (index < 0 || index >= inserted) { //valores no validos
-            throw new BadIndexException();
-        }
+        validateNotNullValue(data);
+        validateBadIndexException(index,inserted);
         for (int i = 0; i <= inserted; i++) {
             if (i == index) {
                 array[i] = data;
@@ -92,13 +81,10 @@ public class ArrayList <T> implements List<T> {
         }
     }
 
-
     public T getAt(int index) throws BadIndexException { //retorna info de un index pedido
 
         T info = (T) "";
-        if (index < 0 || index >= inserted) { //valores no validos
-            throw new BadIndexException();
-        }
+        validateBadIndexException(index,inserted);
         for (int i = 0; i <= inserted; i++) {
             if (i == index) {
                 info = array[i];
@@ -118,12 +104,19 @@ public class ArrayList <T> implements List<T> {
         inserted--;
     }
 
-
-
     public Iterator<T> getIterator(){ //
         return new ArrayListIterator(this);// retorna un objeto de tipo linkedlistiterator sin asignar a una variable
     }
 
-
+    private void validateNotNullValue(T data) throws NotNullAllowedException{
+        if (data == null){
+            throw new NotNullAllowedException();
+        }
+    }
+    private void validateBadIndexException(int index,int insertado)throws BadIndexException{
+        if (index < 0 || index >= insertado) { //valores no validos
+            throw new BadIndexException();
+        }
+    }
 
 }

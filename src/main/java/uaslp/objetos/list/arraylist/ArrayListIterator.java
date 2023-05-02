@@ -11,11 +11,15 @@ public class ArrayListIterator <T> implements Iterator <T> {
         this.arraylist = arrayList;
     }
 
-    public T next() throws BadIndexException { //regress el valor actual y avanza al siguiente elemento
-        T data = (T) arraylist.getAt(currentSpace);
-        currentSpace ++;
-        return data;
+    public T next() { //regress el valor actual y avanza al siguiente elemento
 
+        T data = null;
+        try {
+            data = (T) arraylist.getAt(currentSpace);
+        } catch (BadIndexException ignored) {
+        }
+        currentSpace++;
+        return data;
     }
     public boolean hasNext() {
 
