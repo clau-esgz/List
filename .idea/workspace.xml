@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="368d9995-3788-4d06-945d-d6acd13067ec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/uaslp/objetos/list/linkedlist/LinkedListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uaslp/objetos/list/arraylist/ArrayListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/List_EspinosaClaudia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/List_EspinosaClaudia.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/exceptions/CollectionsException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/exceptions/CollectionsException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/linkedlist/LinkedListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/collections-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/collections-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/arraylist/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uaslp/objetos/list/arraylist/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uaslp/objetos/list/linkedlist/LinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uaslp/objetos/list/linkedlist/LinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,72 +60,71 @@
       <recent name="C:\Users\death\Desktop\TOO_List\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinkedListTest">
-    <configuration name="LinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ArrayListTest">
+    <configuration name="ArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List_EspinosaClaudia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="PATTERN" value="uaslp.objetos.list.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
-      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="PACKAGE_NAME" value="uaslp.objetos.list.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.arraylist.ArrayListTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.givenAListWithElements_whenSetAt_givenABadIndex_thenExceptionIsThrown" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.givenAListWithElements_getTheLengthOfTheArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List_EspinosaClaudia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="PATTERN" value="uaslp.objetos.list.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
-      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
-      <option name="METHOD_NAME" value="givenAListWithElements_whenSetAt_givenABadIndex_thenExceptionIsThrown" />
+      <option name="PACKAGE_NAME" value="uaslp.objetos.list.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.arraylist.ArrayListTest" />
+      <option name="METHOD_NAME" value="givenAListWithElements_getTheLengthOfTheArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.givenAListWithElements_when_replaceAnElementWhitSetAt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.givenAListWithElements_whenRemoveAllWithValue_theElementIsRemoved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List_EspinosaClaudia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="PATTERN" value="uaslp.objetos.list.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
-      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
-      <option name="METHOD_NAME" value="givenAListWithElements_when_replaceAnElementWhitSetAt" />
+      <option name="PACKAGE_NAME" value="uaslp.objetos.list.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.arraylist.ArrayListTest" />
+      <option name="METHOD_NAME" value="givenAListWithElements_whenRemoveAllWithValue_theElementIsRemoved" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.pruebaaa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayListTest.givenAListWithElements_whenRemoveAll_AllElementsIsRemoved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List_EspinosaClaudia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uaslp.objetos.list.linkedlist.*" />
+          <option name="PATTERN" value="uaslp.objetos.list.arraylist.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
-      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
-      <option name="METHOD_NAME" value="pruebaaa" />
+      <option name="PACKAGE_NAME" value="uaslp.objetos.list.arraylist" />
+      <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.arraylist.ArrayListTest" />
+      <option name="METHOD_NAME" value="givenAListWithElements_whenRemoveAll_AllElementsIsRemoved" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListTest.whenListIsCreated_thenItIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinkedListTest.givenAListWithElements_whenRemoveAllWithValue_theOnlyElementIsRemoved" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="List_EspinosaClaudia" />
       <extension name="coverage">
         <pattern>
@@ -139,7 +134,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="uaslp.objetos.list.linkedlist" />
       <option name="MAIN_CLASS_NAME" value="uaslp.objetos.list.linkedlist.LinkedListTest" />
-      <option name="METHOD_NAME" value="whenListIsCreated_thenItIsEmpty" />
+      <option name="METHOD_NAME" value="givenAListWithElements_whenRemoveAllWithValue_theOnlyElementIsRemoved" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LinkedListTest" />
-        <item itemvalue="JUnit.LinkedListTest.pruebaaa" />
-        <item itemvalue="JUnit.LinkedListTest.whenListIsCreated_thenItIsEmpty" />
-        <item itemvalue="JUnit.LinkedListTest.givenAListWithElements_whenSetAt_givenABadIndex_thenExceptionIsThrown" />
-        <item itemvalue="JUnit.LinkedListTest.givenAListWithElements_when_replaceAnElementWhitSetAt" />
+        <item itemvalue="JUnit.ArrayListTest" />
+        <item itemvalue="JUnit.ArrayListTest.givenAListWithElements_getTheLengthOfTheArray" />
+        <item itemvalue="JUnit.ArrayListTest.givenAListWithElements_whenRemoveAll_AllElementsIsRemoved" />
+        <item itemvalue="JUnit.ArrayListTest.givenAListWithElements_whenRemoveAllWithValue_theElementIsRemoved" />
+        <item itemvalue="JUnit.LinkedListTest.givenAListWithElements_whenRemoveAllWithValue_theOnlyElementIsRemoved" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +176,15 @@
     </option>
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/uaslp/objetos/list/linkedlist/LinkedListTest.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="arrayList" />
@@ -189,19 +193,49 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAListWithElements_when_replaceAnElementWhitSetAt.ic" NAME="LinkedListTest.givenAListWithElements_when_replaceAnElementWhitSetAt Coverage Results" MODIFIED="1683146705314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
+    <SUITE FILE_PATH="coverage/TOO_List$ArrayListTest_givenAListWithElements_whenRemoveAllWithValue_theElementIsRemoved.ic" NAME="ArrayListTest.givenAListWithElements_whenRemoveAllWithValue_theElementIsRemoved Coverage Results" MODIFIED="1683164957837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$ArrayListTest_whenArrayListIsCreated_thenItIsEmpty.ic" NAME="ArrayListTest.whenArrayListIsCreated_thenItIsEmpty Coverage Results" MODIFIED="1683156714343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAListWith3Elements_whenRemoveAtTail_thenElementIsRemoved.ic" NAME="LinkedListTest.givenAListWith3Elements_whenRemoveAtTail_thenElementIsRemoved Coverage Results" MODIFIED="1683095751701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest.ic" NAME="LinkedListTest Coverage Results" MODIFIED="1683150971559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest.ic" NAME="LinkedListTest Coverage Results" MODIFIED="1683164439624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAnEmptyList_whenAddAtFront_thenElementIsInserted.ic" NAME="LinkedListTest.givenAnEmptyList_whenAddAtFront_thenElementIsInserted Coverage Results" MODIFIED="1683139392170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAListWithElements_whenRemoveAllWithValue_theOnlyElementIsRemoved.ic" NAME="LinkedListTest.givenAListWithElements_whenRemoveAllWithValue_theOnlyElementIsRemoved Coverage Results" MODIFIED="1683140738188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/TOO_List$ArrayListTest_givenAListWithElements_getTheLengthOfTheArray.ic" NAME="ArrayListTest.givenAListWithElements_getTheLengthOfTheArray Coverage Results" MODIFIED="1683165713525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$ArrayListTest_givenAnNotEmptyList_whenAddAtFront_thenElementIsInserted.ic" NAME="ArrayListTest.givenAnNotEmptyList_whenAddAtFront_thenElementIsInserted Coverage Results" MODIFIED="1683161500283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_pruebaaa.ic" NAME="LinkedListTest.pruebaaa Coverage Results" MODIFIED="1683150613738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$ArrayListTest_givenAListWithElements_whenRemoveAll_AllElementsIsRemoved.ic" NAME="ArrayListTest.givenAListWithElements_whenRemoveAll_AllElementsIsRemoved Coverage Results" MODIFIED="1683165017640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAListWithElements_whenRemoveAll_AllElementsIsRemoved.ic" NAME="LinkedListTest.givenAListWithElements_whenRemoveAll_AllElementsIsRemoved Coverage Results" MODIFIED="1683143977125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$ArrayListTest_givenAListWithElement_RemoveTheValueOfAGivenIndex.ic" NAME="ArrayListTest.givenAListWithElement_RemoveTheValueOfAGivenIndex Coverage Results" MODIFIED="1683164389787" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAListWithElements_when_replaceAnElementWhitSetAt.ic" NAME="LinkedListTest.givenAListWithElements_when_replaceAnElementWhitSetAt Coverage Results" MODIFIED="1683146705314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$ArrayListTest_givenAnEmptyList_whenAddAtFront_thenElementIsInserted.ic" NAME="ArrayListTest.givenAnEmptyList_whenAddAtFront_thenElementIsInserted Coverage Results" MODIFIED="1683159979848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$ArrayListTest.ic" NAME="ArrayListTest Coverage Results" MODIFIED="1683165738671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAListWithElements_whenRemoveAllWithValue_theOnlyElementIsRemoved.ic" NAME="LinkedListTest.givenAListWithElements_whenRemoveAllWithValue_theOnlyElementIsRemoved Coverage Results" MODIFIED="1683164762587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAListWithElements_whenRemoveAllWithValue_theElementInTheMiddleIsRemoved.ic" NAME="LinkedListTest.givenAListWithElements_whenRemoveAllWithValue_theElementInTheMiddleIsRemoved Coverage Results" MODIFIED="1683143657891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -210,11 +244,8 @@
     <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_whenListIsCreated_thenItIsEmpty.ic" NAME="LinkedListTest.whenListIsCreated_thenItIsEmpty Coverage Results" MODIFIED="1683148538495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_pruebaaa.ic" NAME="LinkedListTest.pruebaaa Coverage Results" MODIFIED="1683150613738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAListWithElements_whenRemoveAll_AllElementsIsRemoved.ic" NAME="LinkedListTest.givenAListWithElements_whenRemoveAll_AllElementsIsRemoved Coverage Results" MODIFIED="1683143977125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>
+    <SUITE FILE_PATH="coverage/TOO_List$ArrayListTest_whenArrayListIsCreated_thenElementsAreAdded_thenItIsNotEmpty.ic" NAME="ArrayListTest.whenArrayListIsCreated_thenElementsAreAdded_thenItIsNotEmpty Coverage Results" MODIFIED="1683157110830" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>uaslp.objetos.list.arraylist.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/TOO_List$LinkedListTest_givenAListWith3Elements_whenRemoveAtHead_thenElementIsRemoved.ic" NAME="LinkedListTest.givenAListWith3Elements_whenRemoveAtHead_thenElementIsRemoved Coverage Results" MODIFIED="1683138674780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>uaslp.objetos.list.linkedlist.*</FILTER>

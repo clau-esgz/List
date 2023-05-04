@@ -229,7 +229,7 @@ public void givenAList_whenAddAtTailANullValue_thenExceptionIsThrown() {
         Assertions.assertEquals(0,list.getSize());
         Assertions.assertTrue(list.isEmpty());
     }
-    @Test //remplazar datos, tambien probar las excepciones
+    @Test
     public void givenAListWithElements_whenSetAt_theElementIsRemplaced()throws NotNullAllowedException, BadIndexException{
         // Inicialización
         LinkedList<String> list = new LinkedList<>();
@@ -244,7 +244,7 @@ public void givenAList_whenAddAtTailANullValue_thenExceptionIsThrown() {
         Assertions.assertFalse(list.isEmpty());
 
     }
-    @Test //remplazar datos, tambien probar las excepciones
+    @Test
     public void givenAListWithElements_whenSetAt_givenABadIndex_thenExceptionIsThrown()throws NotNullAllowedException, BadIndexException{
         // Inicialización
         LinkedList<String> list = new LinkedList<>();
